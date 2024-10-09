@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Simplon Norm', Arial, sans-serif;
+  src: url('./fonts/GeistMonoVF.woff') format('woff2'),
+       url('./fonts/GeistVF.woff') format('woff');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Simplon Norm', Arial, sans-serif; 
+}
+
+ol {
+  padding: revert; 
+  margin: revert;
+}
+

@@ -1,0 +1,191 @@
+
+.headerContainer {
+  width: 100%;
+}
+
+.bannerSection {
+  width: 100%;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.bannerTitle {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #eb4c6b;
+  
+}
+
+.banerloreum{
+ display: flex;
+ gap: 5px;
+ 
+ align-items: center;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 0px 23px 0px 27px;
+
+}
+
+.logoText {
+  font-weight: 800;
+  font-size: 36px;
+  color: black;
+  margin-left: 10%;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.iconContainer {
+  padding: 20px;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .iconContainer :nth-child(4) {
+    display: none; 
+   
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between; 
+  padding: 1.5rem 20rem; 
+  width: 100%;
+}
+
+.navItem {
+  font-size: 20px;
+  font-weight: 700;
+  white-space: nowrap; 
+  margin-right: 20px; 
+}
+
+.navigationMobile {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  flex-direction: column; 
+}
+
+
+.navItem {
+  font-size: 20px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+
+.discoverSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.5rem 0;
+}
+
+.discoverTitle {
+  font-weight: 400;
+  font-size: 60px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.discoverSubtitle {
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.hamburgerIcon {
+  cursor: pointer;
+  display: none; 
+
+}
+
+@media screen and (max-width: 768px) {
+  .hamburgerIcon {
+    display: block; 
+    left: 10px;
+    top: 30%;
+  }
+  .navigation {
+    display: none;
+  }
+  .logoText {
+    font-size: 20px;
+  }
+  .banerloreum {
+    display: none;
+  }
+  
+  .banerloreum:first-child {
+    display: flex;
+
+  }
+
+  .discoverTitle {
+    font-weight: 400;
+    font-size: 24px;
+    color: black;
+    text-transform: uppercase;
+  }
+  .discoverSubtitle {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    line-height: 22px;
+    padding-top: 10px;
+  }
+  .discoverSection {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .logoSection {
+    position: relative; 
+    gap: 0%;
+  }
+}
+
+@media (min-width: 769px) {
+  .navigationMobile {
+    display: flex; 
+    flex-direction: row;
+    gap: 32px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+
+  .navigationMobile {
+    display: flex; 
+  }
+
+  .menuButton {
+    display: block; 
+  }
+
+  .navItem {
+    font-size: 18px;
+    margin: 1rem 0; 
+  }
+}

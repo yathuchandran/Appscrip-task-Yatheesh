@@ -1,0 +1,243 @@
+.container {
+  width: 100%;
+}
+
+.separator {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 92%;
+  margin: 0 auto;
+  display: flex;
+  padding:25px 0;
+  justify-content: space-between;
+  
+}
+
+.filterToggle {
+  display: none;
+
+}
+
+.productCount {
+  font-weight: 700;
+  font-size: 18px;
+  padding-right:5rem ;
+}
+.showFilter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.filterButton {
+  cursor: pointer;
+  color: #888792;
+}
+
+.filterButtons {
+  cursor: pointer;
+  color: black;
+}
+
+.productGridFourColumns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 50%; 
+}
+
+.productGridThreeColumns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 75%; 
+}
+
+.checkbox {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+/* Selected item */
+.dropdownSelected {
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Dropdown content */
+.dropdownContent {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  margin-top: 5px;
+}
+
+.dropdownItem {
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdownItem:last-child {
+  border-bottom: none;
+}
+
+.selected {
+  font-weight: bold;
+  position: relative;
+}
+
+.selected::before {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  font-size: 14px;
+  color: black;
+}
+
+.dropdownItem:hover {
+  background-color: #f9f9f9;
+}
+
+
+.productCard {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.filterSidebar {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.filterSection {
+  padding: 1.5rem 0;
+  
+}
+
+.filterLabel {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.accordion {
+  padding: 1.5rem 0;
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordionTitle {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.accordionSubTitle{
+  font-size: 18px;
+  font-weight: 400;
+}
+.accordionContent {
+  padding-top: 1rem;
+}
+
+.rotateIcon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.filterList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.filterList li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  gap:5px
+}
+
+.showFilterMobile{
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .productGridFourColumns, 
+  .productGridThreeColumns {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem; 
+    width: 100%;
+  }
+  .productCard{
+    width: 100%;
+  }
+  
+  .productCount,.icon {
+    display: none;
+  }
+
+  .showFilter {
+   display: none;
+  }
+  .showFilterMobile{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .productGridFourColumns,
+  .productGridThreeColumns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem; 
+    width: 100%;
+  }
+
+  .productCard {
+    width: 100%;
+  }
+  .showFilterMobile{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  }
+  
+}
+
+
+@media screen and (max-width: 450px) {
+ 
+
+  .productCount, .icon {
+    display: none;
+  }
+  .showFilterMobile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  }
+}
